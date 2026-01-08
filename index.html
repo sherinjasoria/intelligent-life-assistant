@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Life Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>🧠 Intelligent Life Assistant</h1>
+<p class="subtitle">AI-powered lifestyle intelligence</p>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>📥 Daily Input</h3>
+        <input type="number" id="sleep" placeholder="Sleep hours">
+        <input type="number" id="study" placeholder="Study hours">
+        <input type="number" id="screen" placeholder="Screen time">
+        <input type="number" id="mood" placeholder="Mood (1–5)" min="1" max="5">
+        <button onclick="saveDay()">Analyze My Day</button>
+    </div>
+
+    <div class="card">
+        <h3>🌟 Life Balance Score</h3>
+        <div class="score" id="score">0</div>
+        <div class="progress"><div id="bar"></div></div>
+        <p id="burnout"></p>
+    </div>
+
+    <div class="card">
+        <h3>🔮 Tomorrow Prediction</h3>
+        <p id="prediction">Enter data to predict</p>
+    </div>
+
+    <div class="card">
+        <h3>🔥 Consistency Streak</h3>
+        <p><span id="streak">0</span> days strong</p>
+    </div>
+
+    <div class="card wide">
+        <h3>🧠 AI Insights</h3>
+        <div id="insights"></div>
+    </div>
+
+    <div class="card wide">
+        <h3>📊 Lifestyle Trends</h3>
+        <canvas id="chart"></canvas>
+    </div>
+
+    <div class="card wide">
+        <h3>📅 Weekly AI Summary</h3>
+        <p id="summary"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

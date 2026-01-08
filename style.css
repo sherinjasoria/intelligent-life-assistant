@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+h1 { 
+    margin-top: 20px; 
+}
+
+.subtitle { 
+    opacity: 0.8; 
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.wide {
+    grid-column: span 2;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00aaff;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.progress {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#bar {
+    height: 100%;
+    width: 0%;
+    background: #00ffcc;
+    transition: width 0.6s ease;
+}
